@@ -1,3 +1,4 @@
+#difine the triangle type
 def main():
     base = input("Triangle base lenght:")
     side1 = input("First side lenght:")
