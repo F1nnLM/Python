@@ -67,8 +67,8 @@ def loop ():
             	digitalWrite(0,HIGH)
             	setState(0)
             else:
-				digitalWrite(0,LOW)
-				setState(1)
+		digitalWrite(0,LOW)
+		setState(1)
 				
 	
 	delay(DELAY_TIME)
