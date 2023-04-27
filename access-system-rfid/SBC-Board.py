@@ -3,12 +3,12 @@ from time import *
 
 def main():
 	pinMode(1, OUT)
-	print("Blinking")
+	print("on")
 	while True:
-		if digitalRead(0) == HIGH:
-			customWrite(1, "1,0")
+		if digitalRead("""your port""") == HIGH:
+			customWrite("""your port""", "1,0")
 		else:
-			customWrite(1, "0,1")
+			customWrite("""your port""", "0,1")
 		sleep(1)
 
 if __name__ == "__main__":
