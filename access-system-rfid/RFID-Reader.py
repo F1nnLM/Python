@@ -57,17 +57,17 @@ def loop ():
 #reading the card
     if not found:
         cardID = lastCardID = 0
-        digitalWrite(0,LOW)
+        digitalWrite("""your port""",LOW)
         setState(2)
     else:
         if lastCardID != cardID:
             lastCardID = cardID
             sendReport()
             if (cardID == "1001"):
-            	digitalWrite(0,HIGH)
+            	digitalWrite("""your port""",HIGH)
             	setState(0)
             else:
-		digitalWrite(0,LOW)
+		digitalWrite("""your port""",LOW)
 		setState(1)
 				
 	
